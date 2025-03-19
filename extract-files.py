@@ -49,6 +49,8 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .regex_replace('xml=version', 'xml version'),
     (
+    'vendor/lib64/libcameraopt.so',
+    ): blob_fixup().add_needed('libprocessgroup_shim.so'),
 }
 
 module = ExtractUtilsModule(
