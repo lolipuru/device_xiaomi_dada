@@ -1598,9 +1598,9 @@ odm/lib64/camera/plugins/com.xiaomi.plugin.filter.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.frontbokehpreview.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.frontbokeh.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.gainmapPostProc.so
-odm/lib64/camera/plugins/com.xiaomi.plugin.gainmap.so;DISABLE_CHECKELF
+odm/lib64/camera/plugins/com.xiaomi.plugin.gainmap.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.GestureEffects.so
-odm/lib64/camera/plugins/com.xiaomi.plugin.jpegrAggr.so;DISABLE_CHECKELF
+odm/lib64/camera/plugins/com.xiaomi.plugin.jpegrAggr.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.ldc.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.memcpyCustomization.so
 odm/lib64/camera/plugins/com.xiaomi.plugin.memcpy.so
@@ -1731,7 +1731,7 @@ odm/lib64/libwa_widelens_undistort.so
 odm/lib64/libxmi_slow_motion_mein.so
 
 # Camera vendor
-vendor/bin/hw/vendor.qti.camera.provider-service_64;DISABLE_CHECKELF
+vendor/bin/hw/vendor.qti.camera.provider-service_64
 vendor/lib64/camera/bitmlconfig.bin
 vendor/lib64/camera/bitmlconfig_sm7550.bin
 vendor/lib64/camera/camxfl115indices.bin
@@ -1758,7 +1758,7 @@ vendor/lib64/camera/components/com.qti.node.aon.so
 vendor/lib64/camera/components/com.qti.node.customhwnode.so
 vendor/lib64/camera/components/com.qti.node.depthprovider.so
 vendor/lib64/camera/components/com.qti.node.depth.so
-vendor/lib64/camera/components/com.qti.node.dewarp.so;DISABLE_CHECKELF
+vendor/lib64/camera/components/com.qti.node.dewarp.so
 vendor/lib64/camera/components/com.qti.node.dummydepth.so
 vendor/lib64/camera/components/com.qti.node.dummyrtb.so
 vendor/lib64/camera/components/com.qti.node.dummysat.so
@@ -1856,8 +1856,8 @@ vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/camera/libmicamvendorcustom.so
 vendor/lib64/camera/qfdserviceconfig.bin
-vendor/lib64/camx.device-impl.so;DISABLE_CHECKELF
-vendor/lib64/camx.provider-impl.so;DISABLE_CHECKELF
+vendor/lib64/camx.device-impl.so
+vendor/lib64/camx.provider-impl.so
 vendor/lib64/com.qti.camx.chiiqutils.so
 vendor/lib64/com.qti.chifeaturecompatibility.so
 vendor/lib64/com.qti.chiusecaseselector.so
@@ -1934,9 +1934,9 @@ vendor/lib64/libcom.xiaomi.qimagebuffer.so
 vendor/lib64/libcom.xiaomi.sensorpolicy.so
 vendor/lib64/libcom.xiaomi.signaltrigger.so
 vendor/lib64/hw/camera.qcom.sm8750.so
-vendor/lib64/hw/camera.qcom.so;DISABLE_CHECKELF
+vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.offline.so
-vendor/lib64/hw/com.qti.chi.override.so;DISABLE_CHECKELF
+vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/immunesystem.db.sqlite3.so
 vendor/lib64/libAF.so
 vendor/lib64/libaidenoiser.so
@@ -1955,7 +1955,7 @@ vendor/lib64/libcamxhwlfrontend.so
 vendor/lib64/libcamxhwlipedriver.so
 vendor/lib64/libcamxhwnodecontext.so
 vendor/lib64/libcamxifestriping.so
-vendor/lib64/libcamximageformatutils.so;DISABLE_CHECKELF
+vendor/lib64/libcamximageformatutils.so
 vendor/lib64/libcamxncsdatafactory.so
 vendor/lib64/libcamxods.so
 vendor/lib64/libcamxofehwl.so
@@ -1966,7 +1966,7 @@ vendor/lib64/libcamxswispiqmodule.so
 vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcamxvppservicebase.so
-vendor/lib64/libchifeature2.so;DISABLE_CHECKELF
+vendor/lib64/libchifeature2.so
 vendor/lib64/libchilog.so
 vendor/lib64/libchinodeevautils.so
 vendor/lib64/libchinodehmeutils.so
@@ -1976,8 +1976,10 @@ vendor/lib64/libdeflicker.so
 vendor/lib64/libDISAlgos.so
 vendor/lib64/libDlhookDumpStates.so
 vendor/lib64/libecoengine.so
+vendor/lib64/libjpegencoder.so:vendor/lib64/libjpegencoder_dada.so;FIX_SONAME
 vendor/lib64/libfastmessage.so
 vendor/lib64/libFS.so
+vendor/lib64/libjpegdecoder.so:vendor/lib64/libjpegdecoder_dada.so;FIX_SONAME
 vendor/lib64/libhdr10plus.so
 vendor/lib64/libHISCppAlgos.so
 vendor/lib64/libhwliqinterface2.so
@@ -1993,9 +1995,9 @@ vendor/lib64/libmialgoengine_custom.so
 vendor/lib64/libmialgoengine.so
 vendor/lib64/libmialgo.so
 vendor/lib64/libmicamera_adapter.so
-vendor/lib64/libmicamera_aidl_device.so;DISABLE_CHECKELF
-vendor/lib64/libmicamera_aidl_provider.so;DISABLE_CHECKELF
-vendor/lib64/libmicamera_aidl_utils.so;DISABLE_CHECKELF
+vendor/lib64/libmicamera_aidl_device.so
+vendor/lib64/libmicamera_aidl_provider.so
+vendor/lib64/libmicamera_aidl_utils.so
 vendor/lib64/libmicamera_hal_core.so
 vendor/lib64/libmicamera_hal_policy.so
 vendor/lib64/libmicamGlobalPool.so
@@ -2030,6 +2032,7 @@ vendor/lib64/libsiminputgenutil.so
 vendor/lib64/libsimulation.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libSNPESample.so
+vendor/lib64/libultrahdr.so:vendor/lib64/libultrahdr_dada.so;FIX_SONAME
 vendor/lib64/libvega_common.so
 vendor/lib64/vendor.xiaomi.hardware.aidlbgservice-V1-impl.so
 vendor/lib64/vendor.xiaomi.hardware.aidlbgservice-V1-ndk.so
@@ -2040,10 +2043,10 @@ vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hardware.bgservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.camera.companion-impl.so
 vendor/lib64/vendor.xiaomi.hardware.camera.companion-V1-ndk.so
-vendor/lib64/vendor.xiaomi.hardware.camera.injection-client.so;DISABLE_CHECKELF
-vendor/lib64/vendor.xiaomi.hardware.camera.injection-service.so;DISABLE_CHECKELF
-vendor/lib64/vendor.xiaomi.hardware.camera.injection-V1-ndk.so;DISABLE_CHECKELF
-vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so;DISABLE_CHECKELF
+vendor/lib64/vendor.xiaomi.hardware.camera.injection-client.so
+vendor/lib64/vendor.xiaomi.hardware.camera.injection-service.so
+vendor/lib64/vendor.xiaomi.hardware.camera.injection-V1-ndk.so
+vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so
 vendor/lib64/vendor.xiaomi.hardware.aon-V1-ndk.so
 vendor/lib64/vendor.xiaomi.hardware.camera.synthetic-impl.so
 vendor/lib64/vendor.xiaomi.hardware.camera.synthetic-V1-ndk.so

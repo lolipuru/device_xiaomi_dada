@@ -27,17 +27,6 @@ namespace_imports = [
     'vendor/xiaomi/sm8750-common',
 ]
 
-lib_fixups: lib_fixups_user_type = {
-    **lib_fixups,
-    (
-        'libultrahdr',
-        'android.hardware.graphics.allocator-V1-ndk',
-        'android.hardware.camera.metadata-V2-ndk',
-        'android.hardware.camera.device-V1-ndk',
-        'android.hardware.sensors-V2-ndk'
-    ): lib_fixup_remove,
-}
-
 blob_fixups: blob_fixups_user_type = {
     (
         'odm/etc/camera/motiontuning.xml',
@@ -66,6 +55,44 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_unlock')
         .clear_symbol_version('AHardwareBuffer_lock')
         .clear_symbol_version('AHardwareBuffer_isSupported'),
+    (
+       'vendor/lib64/camera/components/com.qti.node.dewarp.so',
+       'vendor/lib64/hw/com.qti.chi.override.so',
+       'vendor/lib64/libcamximageformatutils.so',
+       'vendor/lib64/libchifeature2.so',
+       'vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so',
+    ): blob_fixup()
+        .remove_needed('android.hardware.graphics.allocator-V1-ndk.so'),
+    (
+       'vendor/lib64/vendor.xiaomi.hardware.camera.injection-V1-ndk.so',
+       'vendor/lib64/vendor.xiaomi.hardware.camera.injection-client.so',
+       'vendor/lib64/vendor.xiaomi.hardware.camera.injection-service.so',
+    ): blob_fixup()
+        .replace_needed(
+            'android.hardware.camera.device-V1-ndk.so',
+            'android.hardware.camera.device-V2-ndk.so'
+        ),
+    (
+       'vendor/lib64/hw/camera.qcom.so',
+    ): blob_fixup()
+        .replace_needed(
+            'android.hardware.sensors-V2-ndk.so',
+            'android.hardware.sensors-V3-ndk.so'
+        ),
+    'vendor/lib64/libultrahdr_dada.so': blob_fixup()
+        .replace_needed(
+            'libjpegencoder.so',
+            'libjpegencoder_dada.so'
+        )
+        .replace_needed(
+            'libjpegdecoder.so',
+            'libjpegdecoder_dada.so'
+        ),
+    ('odm/lib64/camera/plugins/com.xiaomi.plugin.jpegrAggr.so', 'odm/lib64/camera/plugins/com.xiaomi.plugin.gainmap.so'): blob_fixup()
+        .replace_needed(
+            'libultrahdr.so',
+            'libultrahdr_dada.so'
+        ),
 }
 
 module = ExtractUtilsModule(
