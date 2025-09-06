@@ -235,8 +235,9 @@ vendor/lib64/bm5a79v08s13n90.bin
 odm/etc/audio/sku_sun/mixer_paths_overlay_dynamic.xml
 odm/etc/audio/sku_sun/mixer_paths_overlay_static.xml
 odm/etc/audio/sku_sun/mixer_paths_sun_mtp.xml
-vendor/etc/audio/sku_sun/mixer_paths_sun_mtp.xml
-vendor/etc/audio/sku_sun/resourcemanager_sun_mtp.xml
+
+# Audio - from OS3.0.0.14.WOCCNXM
+odm/etc/audio/sku_sun/resourcemanager_sun_mtp.xml|6319c389ef35cbb2fbcbb67fa37ee58d2eb9b013
 
 # Audio firmware
 odm/firmware/B-cs35l43-delta-music-spk-prot.bin
