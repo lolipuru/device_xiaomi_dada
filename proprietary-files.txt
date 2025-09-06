@@ -1733,6 +1733,8 @@ odm/lib64/libxmi_slow_motion_mein.so
 
 # Camera vendor
 vendor/bin/hw/vendor.qti.camera.provider-service_64
+vendor/etc/camera/cameraopt_perf.json
+vendor/etc/camera/cameraopt_vendor.json
 vendor/lib64/camera/bitmlconfig.bin
 vendor/lib64/camera/bitmlconfig_sm7550.bin
 vendor/lib64/camera/camxfl115indices.bin
