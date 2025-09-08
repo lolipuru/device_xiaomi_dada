@@ -46,7 +46,7 @@ blob_fixups: blob_fixups_user_type = {
         'odm/lib64/libAncHumanPreviewBokeh.so',
         'odm/lib64/libTrueSight.so',
         'odm/lib64/libwa_widelens_undistort.so',
-        'vendor/lib64/libMiPhotoFilter.so'
+        'odm/lib64/libMiPhotoFilter.so'
     ): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
@@ -56,11 +56,11 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('AHardwareBuffer_lock')
         .clear_symbol_version('AHardwareBuffer_isSupported'),
     (
-       'vendor/lib64/camera/components/com.qti.node.dewarp.so',
-       'vendor/lib64/hw/com.qti.chi.override.so',
-       'vendor/lib64/libcamximageformatutils.so',
-       'vendor/lib64/libchifeature2.so',
-       'vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so',
+       'odm/lib64/camera/components/com.qti.node.dewarp.so',
+       'odm/lib64/hw/com.qti.chi.override.so',
+       'odm/lib64/libcamximageformatutils.so',
+       'odm/lib64/libchifeature2.so',
+       'odm/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so',
     ): blob_fixup()
         .remove_needed('android.hardware.graphics.allocator-V1-ndk.so'),
     (
@@ -73,7 +73,7 @@ blob_fixups: blob_fixups_user_type = {
             'android.hardware.camera.device-V2-ndk.so'
         ),
     (
-       'vendor/lib64/hw/camera.qcom.so',
+       'odm/lib64/hw/camera.qcom.so',
     ): blob_fixup()
         .replace_needed(
             'android.hardware.sensors-V2-ndk.so',
