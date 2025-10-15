@@ -16,5 +16,10 @@ persist.vendor.fingerprint.sensor_location=600|2390|109
 # Marketname
 ro.product.marketname=Xiaomi 15
 
+# Sensor
+persist.vendor.sensor.mischeck=true
+ro.vendor.sensor.maxbrightness=2731
+ro.vendor.proxcal.factor=3.0
+
 # USB
 vendor.usb.product_string=Xiaomi 15
