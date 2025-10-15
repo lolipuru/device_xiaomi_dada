@@ -11,6 +11,12 @@ $(call inherit-product, device/xiaomi/sm8750-common/common.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/dada/dada-vendor.mk)
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResDada \
+    SettingsOverlayDada \
+    SystemUIResDada
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
