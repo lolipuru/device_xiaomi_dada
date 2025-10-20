@@ -2207,6 +2207,26 @@ odm/vendor/persist/display/dolby_vision.cfg
 odm/lib64/hw/fingerprint.goodix_us.so:odm/lib64/hw/fingerprint.goodix_us.default.so;FIX_SONAME
 odm/lib64/libgf_hal.so
 
+# QSN
+odm/lib64/libqsegnet.so
+odm/lib64/qsn1nrt430.bin;SYMLINK=vendor/lib64/qsn1nrt430.bin
+odm/lib64/qsn1nrt43180.bin;SYMLINK=vendor/lib64/qsn1nrt43180.bin
+odm/lib64/qsn1nrt43270.bin;SYMLINK=vendor/lib64/qsn1nrt43270.bin
+odm/lib64/qsn1nrt4390.bin;SYMLINK=vendor/lib64/qsn1nrt4390.bin
+odm/lib64/qsn1rt1690.bin;SYMLINK=vendor/lib64/qsn1rt1690.bin
+odm/lib64/qsn1rt169180.bin;SYMLINK=vendor/lib64/qsn1rt169180.bin
+odm/lib64/qsn1rt169270.bin;SYMLINK=vendor/lib64/qsn1rt169270.bin
+odm/lib64/qsn1rt16990.bin;SYMLINK=vendor/lib64/qsn1rt16990.bin
+odm/lib64/qsn1rt430.bin;SYMLINK=vendor/lib64/qsn1rt430.bin
+odm/lib64/qsn1rt43180.bin;SYMLINK=vendor/lib64/qsn1rt43180.bin
+odm/lib64/qsn1rt43270.bin;SYMLINK=vendor/lib64/qsn1rt43270.bin
+odm/lib64/qsn1rt4390.bin;SYMLINK=vendor/lib64/qsn1rt4390.bin
+odm/lib64/qsn1rtlp1690.bin;SYMLINK=vendor/lib64/qsn1rtlp1690.bin
+odm/lib64/qsn1rtlp169270.bin;SYMLINK=vendor/lib64/qsn1rtlp169270.bin
+odm/lib64/qsn1rtlp430.bin;SYMLINK=vendor/lib64/qsn1rtlp430.bin
+odm/lib64/qsn1rtlp43270.bin;SYMLINK=vendor/lib64/qsn1rtlp43270.bin
+odm/lib64/qsn2all.bin;SYMLINK=vendor/lib64/qsn2all.bin
+
 # RIL
 odm/etc/me_config.xml
 
