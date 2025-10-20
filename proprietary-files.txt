@@ -1522,11 +1522,11 @@ odm/etc/camera/xiaomiSceneDetection.xml
 odm/etc/camera/xiaomismartaeconfig.json
 odm/etc/camera/xmi_slmt_4x_1080p.dlc
 odm/etc/camera/xmi_slmt_4x_720p.dlc
-odm/lib64/camera/aon_front_i_1.pb
-odm/lib64/camera/aon_front_ii_1.pb
-odm/lib64/camera/aon_rear_i_2.pb
-odm/lib64/camera/aon_rear_ii_2.pb
-odm/lib64/camera/bitmlconfig.bin
+odm/lib64/camera/aon_front_i_1.pb;SYMLINK=vendor/lib64/camera/aon_front_i_1.pb
+odm/lib64/camera/aon_front_ii_1.pb;SYMLINK=vendor/lib64/camera/aon_front_ii_1.pb
+odm/lib64/camera/aon_rear_i_2.pb;SYMLINK=vendor/lib64/camera/aon_rear_i_2.pb
+odm/lib64/camera/aon_rear_ii_2.pb;SYMLINK=vendor/lib64/camera/aon_rear_ii_2.pb
+odm/lib64/camera/bitmlconfig.bin;SYMLINK=vendor/lib64/camera/bitmlconfig.bin
 odm/lib64/camera/camxfl115indices.bin
 odm/lib64/camera/camxfl300v1indices.bin
 odm/lib64/camera/camxfl300v2indices.bin
@@ -1674,7 +1674,7 @@ odm/lib64/camera/com.qti.eeprom.dada_sunny_ov32b40_gt24p64e_front_i_eeprom.so
 odm/lib64/camera/com.qti.eeprom.dada_sunny_ovx9100_p24u128b_wide_ii_eeprom.so
 odm/lib64/camera/com.qti.eeprom.dada_sunny_s5kjn1_gt24p128f_ultra_i_eeprom.so
 odm/lib64/camera/com.qti.eeprom.dada_sunny_s5kjn5_p24c128f_tele3x_i_eeprom.so
-odm/lib64/camera/com.qti.ofe.profiledb.default.bin
+odm/lib64/camera/com.qti.ofe.profiledb.default.bin;SYMLINK=vendor/lib64/camera/com.qti.ofe.profiledb.default.bin
 odm/lib64/camera/com.qti.ois.dada_ofilm_s5kjn5_bu24619_tele3x_ii_ois.so
 odm/lib64/camera/com.qti.ois.dada_sunny_s5kjn5_bu24619_tele3x_i_ois.so
 odm/lib64/camera/com.qti.sensor.dada_ofilm_ov32b40_front_ii.so
@@ -1884,7 +1884,7 @@ odm/lib64/libcamlog.so
 odm/lib64/libcamxcommonutils.so
 odm/lib64/libcamxcoreutils.so
 odm/lib64/libcamxcsl.so
-odm/lib64/libcamxexternalformatutils.so
+odm/lib64/libcamxexternalformatutils.so;SYMLINK=vendor/lib64/libcamxexternalformatutils.so
 odm/lib64/libcamxfdengine.so
 odm/lib64/libcamxhwlfrontend.so
 odm/lib64/libcamxhwlipedriver.so
@@ -2024,7 +2024,7 @@ odm/lib64/librfs_warp.so
 odm/lib64/libshadowhook.so
 odm/lib64/libsiminputgenutil.so
 odm/lib64/libsimulation.so
-odm/lib64/libSNPE.so
+odm/lib64/libSNPE.so;SYMLINK=vendor/lib64/libSNPE.so
 odm/lib64/libsupermoon.so
 odm/lib64/libTrueSight.so
 odm/lib64/libvega_common.so
