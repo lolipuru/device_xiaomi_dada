@@ -11,7 +11,7 @@ vendor.display.enable_spr=1
 
 # Fingerprint
 persist.vendor.fingerprint.type=udfps
-persist.vendor.fingerprint.sensor_location=600|2390|109
+persist.vendor.fingerprint.sensor_location=600|2050|109
 
 # Marketname
 ro.product.marketname=Xiaomi 15
