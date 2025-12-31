@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Xiaomi 15 (OS3.0.0.14.WOCCNXM). 
+## are from Xiaomi 15 (OS3.0.5.0.WOCCNXM). 
 
 # ACDB
 odm/etc/acdbdata/Fluence/Fluence_acdb_cal.acdb
@@ -36,7 +36,7 @@ odm/lib/rfsa/adsp/libmlawbpostproc_dsp_skel.so
 odm/lib/rfsa/adsp/libQnnHtpV79.so
 odm/lib/rfsa/adsp/libQnnHtpV79Skel.so
 odm/lib/rfsa/adsp/libQnnSaver.so;MODULE=adsp
-odm/lib/rfsa/adsp/libSnpeHtpV79Skel.so
+odm/lib/rfsa/adsp/libSnpeHtpV79Skel.so;SYMLINK=vendor/lib/rfsa/adsp/libSnpeHtpV79Skel.so
 odm/lib64/bm5a73v04s13n00.bin
 odm/lib64/bm5a73v04s13n01.bin
 odm/lib64/bm5a73v04s13n02.bin
@@ -1785,6 +1785,7 @@ odm/lib64/camera/zsl/com.xiaomi.zsl.single.so
 odm/lib64/camera/zsl/com.xiaomi.zsl.sr.so
 
 # Camera ODM
+odm/bin/hw/misensor_camera
 odm/bin/hw/vendor.qti.camera.provider-service_64
 odm/lib64/camx.device-impl.so
 odm/lib64/camx.provider-impl.so
@@ -1852,11 +1853,12 @@ odm/lib64/com.xiaomi.immunesystem.hook.mtkhal.so
 odm/lib64/com.xiaomi.messagecenter.so
 odm/lib64/com.xiaomi.plugin.ecdengine.so
 odm/lib64/hw/camera.qcom.sm8750.so
-odm/lib64/hw/camera.qcom.so
+odm/lib64/hw/camera.qcom.so;SYMLINK=vendor/lib64/hw/camera.qcom.so
 odm/lib64/hw/com.qti.chi.offline.so
-odm/lib64/hw/com.qti.chi.override.so
+odm/lib64/hw/com.qti.chi.override.so;SYMLINK=vendor/lib64/hw/com.qti.chi.override.so
 odm/lib64/immunesystem.db.sqlite3.so
 odm/lib64/libAF.so
+odm/lib64/libAncHumanPreviewBokeh.so
 odm/lib64/libaidenoiser.so
 odm/lib64/libaidenoiserv2.so
 odm/lib64/libailab_rawhdr.so
@@ -1865,7 +1867,6 @@ odm/lib64/libanc_edof.so
 odm/lib64/libanc_objdetection.so
 odm/lib64/libanc_single_bokeh.so
 odm/lib64/libanc_supermoon.so
-odm/lib64/libAncHumanPreviewBokeh.so
 odm/lib64/libarc.ion.so
 odm/lib64/libarcsoft_qnnhtp.so
 odm/lib64/libarcsoft_raw_sr.so
@@ -1878,6 +1879,7 @@ odm/lib64/libarcsoft_turbo_hdr_raw_portrait.so
 odm/lib64/libbitmlengine.so
 odm/lib64/libbitmlenginev2.so
 odm/lib64/libc++_shared.so
+odm/lib64/libcalculator.so;FIX_SONAME
 odm/lib64/libcamera_scene.so
 odm/lib64/libcameraheif.so
 odm/lib64/libcamlog.so
@@ -1935,21 +1937,28 @@ odm/lib64/libharbo.so
 odm/lib64/libhdr10plus.so
 odm/lib64/libheichal.so
 odm/lib64/libHISCppAlgos.so
+odm/lib64/libIMTCppAlgos.so
+odm/lib64/libhme.so
+odm/lib64/libhta_hexagon_runtime_snpe.so;FIX_SONAME
 odm/lib64/libhwliqinterface2.so
 odm/lib64/libhwlispcffdump.so
 odm/lib64/libIntelligentFocus.so
+odm/lib64/libiccprofile.so
 odm/lib64/libipebpsstriping.so
 odm/lib64/libipebpsstriping170.so
 odm/lib64/libipebpsstriping480.so
 odm/lib64/libiqdbgmgr.so
 odm/lib64/libisphwsetting.so
 odm/lib64/libITT.so
+odm/lib64/libjpege.so
+odm/lib64/libmctfengine_stub.so
 odm/lib64/libmfec.so
 odm/lib64/libmfGhostDetection.so
 odm/lib64/libmi_aialign_raw.so
 odm/lib64/libmi_computationalOptics_def.so
 odm/lib64/libmi_hdr_raw.so
 odm/lib64/libmi_mfnr_raw.so
+odm/lib64/libmi_supernight_raw.so
 odm/lib64/libmiaio_aio_inst_seg.so
 odm/lib64/libmiaio_aio_seg.so
 odm/lib64/libmiaio_det_sceneseg.so
@@ -1989,6 +1998,7 @@ odm/lib64/libmiocr.so
 odm/lib64/libmiphone_capture_bokeh.so
 odm/lib64/libmiphone_dualcam_depth_aideploy.so
 odm/lib64/libMiPhotoFilter.so
+odm/lib64/libPlatformValidatorShared.so
 odm/lib64/libmis_platform.so
 odm/lib64/libmis_plugin_dummy.so
 odm/lib64/libmis_plugin_his.so
@@ -2005,29 +2015,47 @@ odm/lib64/libmmcamera_lscv35.so
 odm/lib64/libmmcamera_mfnr_t4.so
 odm/lib64/libmmcamera_mfnr.so
 odm/lib64/libmmcamera_pdpc.so
+odm/lib64/libmmfp.so
 odm/lib64/libmorpho_Depurple.so
 odm/lib64/libocr_api.so
+odm/lib64/libofestriping.so
 odm/lib64/libofflinedebugdata.so
 odm/lib64/libois_channel_stub.so
 odm/lib64/liboischannel.so
 odm/lib64/libopencv.so
 odm/lib64/libopencv3a.so
+odm/lib64/libopestriping.so
 odm/lib64/libPanShotPostProcess.so
 odm/lib64/libportrait_repair_qnn.so
 odm/lib64/libpostprocinfo.so
 odm/lib64/libproj_qmot_tracker.so
 odm/lib64/libproj_sot.so
+odm/lib64/libqfdadapter.so
+odm/lib64/libqfdservice.so
+odm/lib64/libqll.so
+odm/lib64/libqllengine.so
 odm/lib64/libqshcamera.so
 odm/lib64/libremosaic_wrapper.so
 odm/lib64/libremosaiclib_s5kjn1.so;FIX_SONAME
+odm/lib64/libremosaiclib_s5kjn5.so;FIX_SONAME
 odm/lib64/librfs_warp.so
+odm/lib64/libsfeShiftExtrapolation.so
 odm/lib64/libshadowhook.so
 odm/lib64/libsiminputgenutil.so
 odm/lib64/libsimulation.so
+odm/lib64/libsnpe_config.so
 odm/lib64/libSNPE.so;SYMLINK=vendor/lib64/libSNPE.so
+odm/lib64/libSnpeHta.so
+odm/lib64/libSnpeHtpPrepare.so
+odm/lib64/libSnpeHtpV79CalculatorStub.so;FIX_SONAME
+odm/lib64/libSnpeHtpV79Stub.so
 odm/lib64/libsupermoon.so
+odm/lib64/libswregistrationalgo.so
+odm/lib64/libtfestriping.so
 odm/lib64/libTrueSight.so
+odm/lib64/libubifocus.so
 odm/lib64/libvega_common.so
+odm/lib64/libvideoml.so
 odm/lib64/libwa_widelens_undistort.so
 odm/lib64/libxmi_slow_motion_mein.so
 odm/lib64/vendor.qti.hardware.camera.aon-service-impl.so
@@ -2037,10 +2065,12 @@ odm/lib64/vendor.xiaomi.hardware.aidlbgservice-V1-impl.so
 odm/lib64/vendor.xiaomi.hardware.aidlbgservice-V1-ndk.so
 odm/lib64/vendor.xiaomi.hardware.bgservice@1.0-impl.so
 odm/lib64/vendor.xiaomi.hardware.bgservice@1.0.so
+odm/lib64/vendor.xiaomi.hardware.seccam-V1-ndk.so
 
 # Camera vendor
 vendor/etc/camera/cameraopt_perf.json
 vendor/etc/camera/cameraopt_vendor.json
+vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libcameraobserver.so
 vendor/lib64/libcameraopt.so
 vendor/lib64/libjpegdecoder.so:vendor/lib64/libjpegdecoder_dada.so;FIX_SONAME
@@ -2226,6 +2256,7 @@ odm/lib64/qsn1rtlp169270.bin;SYMLINK=vendor/lib64/qsn1rtlp169270.bin
 odm/lib64/qsn1rtlp430.bin;SYMLINK=vendor/lib64/qsn1rtlp430.bin
 odm/lib64/qsn1rtlp43270.bin;SYMLINK=vendor/lib64/qsn1rtlp43270.bin
 odm/lib64/qsn2all.bin;SYMLINK=vendor/lib64/qsn2all.bin
+odm/lib64/qsn3all.bin;SYMLINK=vendor/lib64/qsn3all.bin
 
 # RIL
 odm/etc/me_config.xml

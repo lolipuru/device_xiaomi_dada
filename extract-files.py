@@ -93,6 +93,11 @@ blob_fixups: blob_fixups_user_type = {
             'libultrahdr.so',
             'libultrahdr_dada.so'
         ),
+    (
+        'vendor/lib64/libcamera2ndk_vendor.so',
+    ): blob_fixup()
+        .replace_needed('android.frameworks.cameraservice.device-V2-ndk.so', 'android.frameworks.cameraservice.device-V3-ndk.so')
+        .replace_needed('android.frameworks.cameraservice.service-V2-ndk.so', 'android.frameworks.cameraservice.service-V3-ndk.so')
 }
 
 module = ExtractUtilsModule(

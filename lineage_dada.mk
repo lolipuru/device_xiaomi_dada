@@ -22,9 +22,9 @@ PRODUCT_MODEL := 24129PN74C
 PRODUCT_MANUFACTURER := xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc=$(call normalize-path-list, "dada dada 16 BP2A.250605.031.A3 OS3.0.0.14.WOCCNXM:user release-keys")
+    BuildDesc=$(call normalize-path-list, "dada dada 16 BP2A.250605.031.A3 OS3.0.5.0.WOCCNXM:user release-keys")
 
-BUILD_FINGERPRINT := Xiaomi/dada/dada:16/BP2A.250605.031.A3/OS3.0.0.14.WOCCNXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/dada/dada:16/BP2A.250605.031.A3/OS3.0.5.0.WOCCNXM:user/release-keys
 
 # GMS
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
