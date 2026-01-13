@@ -13,6 +13,7 @@ $(call inherit-product, vendor/xiaomi/dada/dada-vendor.mk)
 
 # Overlays
 PRODUCT_PACKAGES += \
+    ApertureResDada \
     FrameworksResDada \
     SettingsOverlayDada \
     SystemUIResDada
