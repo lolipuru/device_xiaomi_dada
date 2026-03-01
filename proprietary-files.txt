@@ -2233,10 +2233,6 @@ odm/vendor/etc/videobox.json
 odm/vendor/etc/videoCodecCapability.json
 odm/vendor/persist/display/dolby_vision.cfg
 
-# Fingerprint
-odm/lib64/hw/fingerprint.goodix_us.so:odm/lib64/hw/fingerprint.goodix_us.default.so;FIX_SONAME
-odm/lib64/libgf_hal.so
-
 # QSN
 odm/lib64/libqsegnet.so
 odm/lib64/qsn1nrt430.bin;SYMLINK=vendor/lib64/qsn1nrt430.bin
